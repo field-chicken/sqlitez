@@ -5,4 +5,4 @@ find_package(SQLite3 REQUIRED)
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
 add_executable(example main.cpp)
-
+target_link_libraries(example SQLite3)
